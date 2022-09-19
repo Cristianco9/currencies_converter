@@ -11,60 +11,17 @@ how_much = 0
 # variable to save the converted user amount
 you_have = 0
 
-# Variables to save the currencies equivalent in Colombian Pesos 
-usd = 4435
-mxn = 221
-eur = 4438
-arg = 31
-
-# functions
-def cop_to_usd():
+# function
+def converter(currencie):
     """Function to calcule the convertion and print the result"""
-    print("\n********************** COP TO USD ***********************")
     # Amount request
-    how_much= float(input("Please enter the amount of pesos to convert: "))
-    you_have = how_much / usd
+    print("Please enter the amount of Colombian Pesos to convert:")
+    how_much= float(input(">>>"))
+    you_have = how_much / currencie
     # Limit the amount to only 2 decimal places
     you_have = round(you_have, 2)
     you_have = str(you_have)
-    print("You have $" + you_have + " Dollars")
-    print("************************* DONE **************************")
-
-def cop_to_mxn():
-    """Function to calcule the convertion and print the result"""
-    print("\n********************** COP TO MXN ***********************")
-    # Amount request
-    how_much= float(input("Please enter the amount of pesos to convert: "))
-    you_have = how_much / mxn
-    # Limit the amount to only 2 decimal places
-    you_have = round(you_have, 2)
-    you_have = str(you_have)
-    print("You have $" + you_have + " Mexican Pesos")
-    print("************************* DONE **************************")
-
-def cop_to_eur():
-    """Function to calcule the convertion and print the result"""
-    print("\n********************** COP TO EUR ***********************")
-    # Amount request
-    how_much= float(input("Please enter the amount of pesos to convert: "))
-    you_have = how_much / eur
-    # Limit the amount to only 2 decimal places
-    you_have = round(you_have, 2)
-    you_have = str(you_have)
-    print("You have $" + you_have + " Euros")
-    print("************************* DONE **************************")
-
-def cop_to_arg():
-    """Function to calcule the convertion and print the result"""
-    print("\n********************** COP TO USD ***********************")
-    # Amount request
-    how_much= float(input("Please enter the amount of pesos to convert: "))
-    you_have = how_much / arg
-    # Limit the amount to only 2 decimal places
-    you_have = round(you_have, 2)
-    you_have = str(you_have)
-    print("You have $" + you_have + " Argentine Pesos")
-    print("************************* DONE **************************")
+    return you_have
 
 # Options menu
 while True:     
@@ -88,19 +45,33 @@ while True:
 
     # Assign a function to the validated option
     if choose == 1:
-        cop_to_usd()
+        print("\n********************** COP TO USD ***********************")
+        final_amount = converter(4435)
+        print("You have $" + final_amount + " Dollars")
+        print("************************* DONE **************************")
 
     elif choose == 2:
-        cop_to_mxn()
+        print("\n********************** COP TO MXN ***********************")
+        final_amount = converter(221)
+        print("You have $" + final_amount + " Mexican Pesos")
+        print("************************* DONE **************************")
 
     elif choose == 3:
-        cop_to_eur()
+        print("\n********************** COP TO EUR ***********************")
+        final_amount = converter(4438)
+        print("You have $" + final_amount + " Euros")
+        print("************************* DONE **************************")
 
     elif choose == 4:
-        cop_to_arg()
+        print("\n********************** COP TO ARG ***********************")
+        final_amount = converter(31)
+        print("You have $" + final_amount + " Argentine Pesos")
+        print("************************* DONE **************************")
+
     # option to close the program
     elif choose == 5:
         sys.exit("********************* PROGRAM ENDED *********************")
+
     # If the user enter a wrong input close the program 
     else:
         print("********************** WRONG VALUE **********************")
