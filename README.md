@@ -1,26 +1,26 @@
 # Currency Converter
 
-Este es un programa en Python diseñado para convertir cantidades de Pesos Colombianos (COP) a varias monedas extranjeras. Proporciona una interfaz simple de línea de comandos para que el usuario seleccione la moneda de destino y luego ingrese la cantidad de Pesos Colombianos que desea convertir.
+This is a Python program designed to convert amounts of Colombian Pesos (COP) into various foreign currencies. It provides a simple command-line interface for the user to select the target currency and then input the amount of Colombian Pesos they wish to convert.
 
-## Descripción
+## Description
 
-El programa consta de los siguientes elementos principales:
+The program consists of the following main components:
 
-- **Función de Conversión**: Contiene una función `converter()` que toma como argumento el tipo de cambio de la moneda seleccionada y realiza la conversión de Pesos Colombianos a la moneda deseada.
+- **Conversion Function**: It contains a `converter()` function that takes the exchange rate of the selected currency as an argument and performs the conversion from Colombian Pesos to the desired currency.
 
-- **Menú de Opciones**: Presenta al usuario un menú de opciones numeradas del 1 al 5 para elegir la moneda de destino o salir del programa.
+- **Options Menu**: It presents the user with a numbered menu of options from 1 to 5 to choose the target currency or exit the program.
 
-- **Validación de Entrada**: Realiza una validación de entrada para garantizar que el usuario elija una opción válida del menú.
+- **Input Validation**: It performs input validation to ensure that the user selects a valid option from the menu.
 
-- **Shebang y Módulo de Sistema**: Utiliza un shebang (`#!/user/bin/env python`) para especificar el intérprete de Python a utilizar y también importa el módulo `sys` para permitir la salida del programa.
+- **Shebang and System Module**: It uses a shebang (`#!/user/bin/env python`) to specify the Python interpreter to use and also imports the `sys` module to allow program termination.
 
-El programa está estructurado de manera modular y utiliza comentarios para mejorar la comprensión del código.
+The program is structured in a modular fashion and utilizes comments to enhance code comprehension.
 
-## Introducción
+## Introduction
 
-¡Bienvenido al Currency Converter! Este programa te permite convertir fácilmente cantidades de Pesos Colombianos a cuatro monedas extranjeras populares: Dólares Estadounidenses (USD), Pesos Mexicanos (MXN), Euros (EUR) y Pesos Argentinos (ARG).
+Welcome to the Currency Converter! This program enables you to easily convert amounts of Colombian Pesos into four popular foreign currencies: US Dollars (USD), Mexican Pesos (MXN), Euros (EUR), and Argentine Pesos (ARG).
 
-Simplemente selecciona una de las opciones del menú, ingresa la cantidad de Pesos Colombianos que deseas convertir y obtendrás el equivalente en la moneda seleccionada.
+Simply select one of the menu options, input the amount of Colombian Pesos you want to convert, and you'll receive the equivalent in the selected currency.
 
-¡Esperamos que este programa te sea útil para tus necesidades de conversión de moneda!
+We hope this program proves to be useful for your currency conversion needs!
 
